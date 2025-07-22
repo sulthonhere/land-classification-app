@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AreaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,6 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', fn () => view('dashboard'));
-
+Route::get('dashboard', fn () => view('dashboard'));
 Route::get('login', [AuthController::class, 'login']);
 Route::get('register', [AuthController::class, 'register']);
-

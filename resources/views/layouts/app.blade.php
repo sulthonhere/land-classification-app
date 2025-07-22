@@ -38,6 +38,7 @@
   @include('layouts.partials.sidenav')
   <div class="main-content">
     @include('layouts.partials.topnav')
+    
     @yield('content')
   </div>
   @include('layouts.partials.scripts')
